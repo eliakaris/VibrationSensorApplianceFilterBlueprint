@@ -32,7 +32,7 @@ To tune these parameters, open a historic graph of the vibration sensor in Home 
 
 ![Washing machine vibration cycle](./tuning.png)
 
-The actual lenght of the washing program is **A + B**, which lasted just under 1h 30m. However within A, not much happened that triggered vibrations so we cannot reliably detect the program within that phase. The goal is to identify the end of the program robustly and with as little delay as possible, not the start. For this purpose, we will only consider the **B** phase which lasted just over an hour.
+The actual length of the washing program is **A + B**, which lasted just under 1h 30m. However within A, not much happened that triggered vibrations so we cannot reliably detect the program within that phase. The goal is to identify the end of the program robustly and with as little delay as possible, not the start. For this purpose, we will only consider the **B** phase which lasted just over an hour.
 
 #### Tune the Started-to-Stopped transition threshold
 This threshold prevents the automation from mistakenly thinking a cycle is over during a temporary pause.
